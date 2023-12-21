@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+        integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <style>
+        table {
+            width: 300px;
+            height: 50px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #000000;
+        }
+
+
+        .button {
+            width: 100px;
+            height: 30px;
+            background-color: #1f5bd4db;
+            color: #000000;
+            font-weight: bold;
+            border: 0px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .Submit {
+            text-align: center;
+        }
+        label.error{
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form id="reg-form">
+        <table border="1">
+            <!--1-->
+            <tr>
+                <td class="title">Full Name*</td>
+                <td colspan="3">
+                    <table border="0">
+                        <td><input type="Name" name="name"  style="width: 400px; height: 25px;"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <!--2-->
+            <tr>
+                <td class="title">Email*</td>
+                <td colspan="3">
+                    <table border="0">
+                        <td><input type="Email" name="email"  style="width: 400px; height: 25px;">
+                        </td>
+                    </table>
+                </td>
+
+            </tr>
+
+            <!--3-->
+            <tr>
+                <td class="title">Password*</td>
+                <td colspan="3">
+                    <table>
+                        <td><input type="password" name="password" id="password" style="width: 400px; height: 25px;"></td>
+                    </table>
+                </td>
+
+            </tr>
+
+            <!--4-->
+            <tr>
+                <td class="title">Confirm Password*</td>
+                <td colspan="3">
+                    <table>
+                        <td><input type="password" name="re_password" style="width: 400px; height: 25px;"></td>
+                    </table>
+                </td>
+
+            </tr>
+
+            <!--5-->
+            <tr>
+                <td class="title">Phone Number*</td>
+                <td colspan="3">
+                    <table>
+                        <td><input type="phone" name="phone" style="width: 400px; height: 25px;"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <!--6-->
+            <tr>
+                <td class="title">Address</td>
+                <td colspan="3"><textarea name="Address" id="address" cols="30" rows="10"></textarea></td>
+
+            </tr>
+
+            <!--7-->
+            <tr>
+                <td class="title">City</td>
+                <td colspan="3">
+                    <table border="0">
+                        <td><input type="City" placeholder="Enter your City"></td>
+                        <td class="title"> State</td>
+                        <td><input type="State" placeholder="Enter your State"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <!--8-->
+            <tr>
+                <td class="title">Zip/Postal Code</td>
+                <td colspan="3"><input type="text" placeholder="Enter your Zip/Postal Code"></td>
+            </tr>
+
+            <!--9-->
+            <tr>
+                <td class="title">Country</td>
+                <td colspan="3"><label for="Select your country"> </label>
+                    <select name="Country" id="Country">
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="China">China</option>
+                        <option value="United States">United States</option>
+                    </select>
+
+                </td>
+            </tr>
+
+            <!--10-->
+            <tr>
+                <td class="title">Birthday</td>
+                <td colspan="3"><input type="date"></td>
+            </tr>
+
+            <!--11-->
+            <tr>
+                <td class="title">Gender</td>
+                <td colspan="3">
+                    <select name="Gender" id="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!--12-->
+            <tr>
+                <td class="title">Starting date</td>
+                <td colspan="3">
+                    <table border="0">
+                        <td><input type="radio" name="Spring" id="1">Spring</td>
+                        <td><input type="radio" name="Summer" id="2">Summer</td>
+                    </table>
+                </td>
+            </tr>
+
+            <!--13-->
+            <tr>
+                <td class="title">Comments</td>
+                <td colspan=""><textarea name="Comments" id="Comments" cols="30" rows="10"></textarea></td>
+            </tr>
+
+            <!--14-->
+            <tr>
+                <td colspan="4" class="Submit">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        $("#reg-form").validate({
+            rules: {
+                name:{
+                    required: true,
+                    minlength: 2
+                },
+                email:{
+                    required: true,
+                    email: true
+                },
+                password:{
+                    required: true,
+                    minlength: 6
+                },
+                re_password:{
+                    required: true,
+                    minlength: 6,
+                    equalTo: "#password"
+                },
+                phone:{
+                    required: true,
+                    minlength: 10,
+                    maxlength: 11
+                },
+            },
+            messages:{
+                name:{
+                    required: "Please enter your name",
+                    minlength: "Your name must consist of at least 2 characters"
+                },
+                email:{
+                    required: "Please enter your email",
+                    email: "Please enter a valid email address"
+                },
+                password:{
+                    required: "Please enter your password",
+                    minlength: "Your password must be at least 6 characters long"
+                },
+                re_password:{
+                    required: "Please re-   enter your password",
+                    minlength: "Your password must be at least 6 characters long",
+                },
+                phone:{
+                    required: "Please enter your phone number",
+                    minlength: "Your phone number must be at least 10 characters long",
+                    maxlength: "Your phone number must be at least 11 characters long"
+                },
+            },
+
+            submitHandler: function (form) {
+                form.submit();
+                alert("Submit form success");
+            }
+        });
+    </script>
+</body>
+
+
+</html>

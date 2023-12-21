@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+
+        .pre {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pre img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pre i {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img onclick="func(this)" src="img/BARC.png" alt="">
+        <img onclick="func(this)" src="img/Davinci.png" alt="">
+        <img onclick="func(this)" src="img/EnglishForTech.jpg" alt="">
+        <img onclick="func(this)" src="img/harrypotter.png" alt="">
+    </div>
+
+    <div class="pre">
+        <i onclick="this.parentElement.style.display='none'" class="fa-solid fa-x"></i>
+        <img src="img/BARC.png" id="p">
+    </div>
+
+    <script>
+        var p = document.getElementById("p");
+
+        function func(image) {
+            p.src = image.src;
+            p.parentElement.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

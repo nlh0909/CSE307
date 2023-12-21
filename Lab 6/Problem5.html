@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Numbers from 1 to N</title>
+    <script>
+      function printNumbers() {
+        let num = document.getElementById("numInput").value;
+        let result = " ";
+        for (let i = 1; i <= num; i++) {
+          result += i + " ";
+        }
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Number from 1 to N</h1>
+
+    <div>
+      <p>
+        Enter a postive number:
+        <input type="text" name="number1" id="numInput" />
+        <button type="button" class="" onclick="printNumbers()">
+          Print Numbers
+        </button>
+      </p>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>

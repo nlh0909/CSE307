@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsing numbers</title>
+  </head>
+  <body>
+    <table border="1px" cellspacing="0" cellpadding="25px"style="margin:auto">
+      <tr>
+        <td>Str</td>
+        <td>ParseInt(str)</td>
+        <td>ParseFloat(str)</td>
+        <td>Number(str)</td>
+        <td>+Str</td>
+        <td>str | 0</td>
+      </tr>
+      <tr>
+        <td id="C21">1234</td>
+        <td id="C212"></td>
+        <td id="C213"></td>
+        <td id="C214"></td>
+        <td id="C215"></td>
+        <td id="C216"></td>
+      </tr>
+      <tr>
+        <td id="C31">1234abc</td>
+        <td id="C312"></td>
+        <td id="C313"></td>
+        <td id="C314"></td>
+        <td id="C315"></td>
+        <td id="C316"></td>
+      </tr>
+      <tr>
+        <td id="C41">0.15</td>
+        <td id="C412"></td>
+        <td id="C413"></td>
+        <td id="C414"></td>
+        <td id="C415"></td>
+        <td id="C416"></td>
+      </tr>
+      <tr>
+        <td id="C51">3.14ivan</td>
+        <td id="C512"></td>
+        <td id="C513"></td>
+        <td id="C514"></td>
+        <td id="C515"></td>
+        <td id="C516"></td>
+      </tr>
+      <tr>
+        <td id="C61">Infinity</td>
+        <td id="C612"></td>
+        <td id="C613"></td>
+        <td id="C614"></td>
+        <td id="C615"></td>
+        <td id="C616"></td>
+      </tr>
+      <tr>
+        <td id="C71">99999999999999999999</td>
+        <td id="C712"></td>
+        <td id="C713"></td>
+        <td id="C714"></td>
+        <td id="C715"></td>
+        <td id="C716"></td>
+      </tr>
+    </table>
+    <script type="">
+      for (var i = 21; i <= 71; i += 10) {
+        let id = "C" + i;
+        let str = document.querySelector("#" + id).innerHTML;
+
+        document.querySelector("#" + id + "2").innerHTML = parseInt(str);
+        document.querySelector("#" + id + "3").innerHTML = parseFloat(str);
+        document.querySelector("#" + id + "4").innerHTML = Number(str);
+        document.querySelector("#" + id + "5").innerHTML = +str;
+        document.querySelector("#" + id + "6").innerHTML = str | 0;
+      }
+    </script>
+  </body>
+</html>

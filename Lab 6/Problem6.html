@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime check</title>
+    <script >
+		function primeNumber(){
+			let primesNum = document.getElementById('numInput').value;
+			let isPrime = true ;
+			if(primesNum<=1){
+				isPrime = false;
+			}else {
+				for (let i = 2; i <= Math.sqrt(primesNum); i++) {
+					if(primesNum % i == 0){
+						isPrime=false;
+						break;
+					}
+				}
+			}
+			let result = isPrime?"True":"False";
+			document.getElementById('output').innerHTML = result;
+		}
+
+	</script>
+</head>
+<body>
+    <body>
+    <h1>Prime check</h1>
+
+    <div>
+      <p>
+        Enter a postive number:
+        <input type="text" name="number1" id="numInput" />
+        <button type="button" class="" onclick="primeNumber()">
+        Check Prime
+        </button>
+    <p>Please enter a valid positive interger</p>
+      </p>
+      <div id="output"></div>
+    </div>
+</body>
+</html>

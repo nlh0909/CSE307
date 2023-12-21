@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p.example {
+            width: 350px;
+            background-color: rgb(65, 153, 165);
+            color: rgb(102, 184, 102);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="example">This is the first paragraph with class "example".</p>
+    </div>
+    <p>This is another paragraph</p>
+    <a href="youtube.com">Link with target attribute</a>
+    <br>
+    <br>
+    <button>Change</button>
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click",() =>{
+            let para = document.querySelector("div > p.example");
+            para.style.backgroundColor = "yellow";
+            para.style.color = "blue";
+            let link = document.querySelector("a");
+            link.style.border = "3px solid red";
+        })
+    </script>
+</body>
+</html>

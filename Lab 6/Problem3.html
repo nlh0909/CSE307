@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Array of Object</title>
+    <script>
+     function Show() {
+            let books = [
+                {
+                    "title": "The Alchemist",
+                    "image": "https://novaedu.vn/uploads/news/2021_01/ai_cung_giao_tiep_nhung_may_nguoi_ket_noi.jpg",
+                    "price": 182700
+                },
+                {
+                    "title": "Learning How to learn",
+                    "image": "https://novaedu.vn/uploads/news/2021_01/ai_cung_giao_tiep_nhung_may_nguoi_ket_noi.jpg",
+                    "price": 251100
+                },
+                {
+                    "title": "Thinking,Fast and Slow",
+                    "image": "https://novaedu.vn/uploads/news/2021_01/ai_cung_giao_tiep_nhung_may_nguoi_ket_noi.jpg",
+                    "price": 299700
+                }];
+                  books.sort(function (a, b) {
+                return a.price - b.price;
+            });
+
+            for (i = 0; i < books.length; i++) {
+                let formattedPrice = books[i].price.toLocaleString('en-US'); // Format the price with commas
+                document.getElementById('result').innerHTML += ` <div style='flex:30%;border-style: solid;text-align:center'>
+                        <p id='title'>${books[i].title}</p>
+                        <img id='img' width=100
+                            src='${books[i].image}' />
+                        <p id='price'>
+                            ${formattedPrice} VND
+                        </p>
+                    </div>`;
+            }
+        }
+    </script>
+</head>
+
+<body onload="Show()">
+
+    <div id='result' style="display: flex;"></div>
+
+</body>
+
+
+</html>

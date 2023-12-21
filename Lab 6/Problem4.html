@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+
+<body>
+    <script>
+        let productList = [
+            { id: 1, name: "Laptop", quantity: 5, price: 1200, image: "laptop_img.jpg" },
+            { id: 2, name: "Phone", quantity: 10, price: 800, image: "phone_img.jpg" },
+            { id: 3, name: "Tablet", quantity: 8, price: 500, image: "tablet_img.jpg" },
+
+        ];
+
+        //sort by product name
+        productList.sort((a, b) => a.name.localeCompare(b.name));
+        //print
+        console.log("Products in the list:");
+        console.log(productList);
+        //Add a new product to the head of the list
+        let newProductHead = { id: 4, name: "Smartwatch", quantity: 15, price: 200, image: "watch_img.jpg" };
+        productList.unshift(newProductHead);
+        // Add a new product to the tail of the list
+        let newProductTail = { id: 0, name: "Foolwatch", quantity: 7, price: 30.49, image: "foolwatch_img.jpg" };
+        productList.push(newProductTail);
+        // Sort the product list again after additions
+        productList.sort((a, b) => a.name.localeCompare(b.name));
+        // Print the updated products in the list
+        console.log("Updated products in the list:");
+        console.log(productList);
+        // Search products by product name
+        function searchProductByName(productName) {
+            return productList.find(product => product.name === productName);
+        }
+        let searchProduct = searchProductByName("Tablet");
+        console.log("Search Product:");
+        console.log(searchProduct);
+        // Remove the product by product ID
+        function removeProductById(productId) {
+            return productList.filter(product => product.id === productId);
+        }
+
+        removeProductById(2);
+        // Print the updated products after removal
+        console.log("Products after removal:");
+        console.log(productList);
+
+        // Edit the product detail by product ID
+        function editProductById(productId, updatedProduct) {
+            let index = productList.findIndex(product => product.id === productId);
+            if (index !== -1) {
+                productList[index] = updatedProduct;
+            }
+        }
+        let updatedProduct = { id: 3, name: "Tablet", quantity: 10, price: 500, image: "tablet_img.jpg" };
+        editProductById(3, updatedProduct);
+
+        // Print the updated products after editing
+        console.log("Products after editing:");
+        console.log(productList);
+
+    </script>
+
+</body>
+
+</html>

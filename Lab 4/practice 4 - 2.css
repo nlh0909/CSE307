@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo img {
+    width: 300px;
+
+}
+
+.login {
+    margin-left: 85%;
+}
+
+.login a {
+    color: blue;
+}
+
+.login a:hover {
+    color: red;
+}
+
+.login i {
+    color: black;
+}
+
+nav {
+    background-color: aquamarine;
+    border: 1px solid black;
+    height: 20px;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .search {
+    float: right;
+}
+
+.body {
+    background-color: rgb(235, 234, 234);
+    padding: 10px;
+}
+
+
+aside#left,
+aside#right,
+section {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside#left {
+    width: 20%;
+}
+
+
+.subject {
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(115, 115, 220);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.subject-title p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px 7px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.subject ul {
+    padding-left: 20px;
+}
+
+.subject-name li {
+    padding: 2px;
+    font-size: 15px;
+}
+
+.subject-name li a {
+    text-decoration: none;
+    color: rgb(90, 45, 90);
+}
+
+.subject-name li a:hover {
+    color: red;
+}
+
+.publisher {
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(115, 115, 220);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+.publisher-title p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px 7px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.publisher ul {
+    padding-left: 20px;
+}
+
+.publisher-name li {
+    padding: 2px;
+    font-size: 15px;
+}
+
+.publisher-name li a {
+    text-decoration: none;
+    color: rgb(90, 45, 90);
+}
+
+.publisher-name li a:hover {
+    color: red;
+}
+
+/* right side */
+aside#right {
+    width: 20%;
+    padding-left: 50px;
+}
+
+.bestseller {
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(115, 115, 220);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.bestseller-title p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px 7px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.bestseller-product img {
+    width: 50px;
+    height: 50px;
+}
+
+.bestseller-product p a {
+    text-decoration: none;
+    color: black;
+}
+
+.links {
+    margin-top: 10px;
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(115, 115, 220);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.links-title p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px 7px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.links-contain {
+    background-color: grey;
+}
+
+.statistic {
+    margin-top: 10px;
+    background-color: rgb(235, 234, 234);
+    border: 1px solid rgb(115, 115, 220);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.statistic-title p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px 7px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.statistic-contain {
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+    background-color: rgb(190, 190, 243);
+}
+
+.registration {
+    margin-left: 20px;
+}
+
+.reg-name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.reg-info {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 50px;
+    border: 0px solid rgb(4, 4, 150);
+    background-color: rgb(162, 241, 241);
+}
+
+#year {
+    width: 40px;
+}
+
+#name {
+    margin-left: 15px
+}
+
+#day {
+    margin-left: 23px
+}
+
+#male {
+    margin-left: 30px
+}
+
+#address {
+    margin-left: 25px;
+}
+
+#phone {
+    margin-left: 11px
+}
+
+#mail {
+    margin-left: 39px
+}
+
+#username {
+    margin-left: 57px;
+}
+
+#password {
+    margin-left: 61px;
+}
+
+#repassword {
+    margin-left: 3px;
+}
+
+.regButton {
+    margin-left: 36%;
+}
+
+.regButton input{
+    background-color: rgb(51, 57, 227);
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(62, 169, 62);
+}

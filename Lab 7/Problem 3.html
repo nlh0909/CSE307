@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.example{
+            background-color: aquamarine;
+            width: 350px;
+            height: 20px;
+        }
+
+        .title{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p class="example">This is the first paragraph with class "example"</p>
+    <p class="example">Another paragraph with class "example"</p>
+    <p>This is a regular paragraph</p>
+    <a href="youtube.com" target="_blank">Link with target attribute</a>
+    <br>
+    <br>
+    <a href="google.com" target="_blank">Another link with target attribute</a>
+    <h1 class="title">Title 1</h1>
+    <h2 class="title">Title 2</h2>
+    <button>Change</button>
+
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click",() =>{
+            let para = document.querySelector("p.example");
+            para.style.backgroundColor = "yellow";
+            let paraAll = document.querySelectorAll("p.example");
+            for(let i=0;i<paraAll.length;i++){
+                paraAll[i].style.margin = "10px";
+                paraAll[i].style.padding = "10px";
+                paraAll[i].style.border = "3px solid green";
+            }
+            let links = document.querySelectorAll("a[target]");
+            for(let i=0;i<links.length;i++){
+                links[i].style.border = "3px solid red";
+                links[i].style.textDecoration = "none";
+            }
+
+            let titles = document.querySelectorAll(".title");
+            for(let i=0;i<titles.length;i++){
+                titles[i].style.color = "orange";
+            }
+        })
+    </script>
+</body>
+</html>

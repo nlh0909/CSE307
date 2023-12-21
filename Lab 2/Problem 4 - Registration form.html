@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form action="">
+        <table border="1" cellspacing="1">
+            <tr>
+                <th>Fullname*</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><input type="text" placeholder="Quynh"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Email*</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><input type="email" pattern="[^ @]*@[^ @]*" placeholder="quynh.tran@eiu.edu.vn"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Password*</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><input type="password" placeholder="12345678"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Confirm Password*</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><input type="password" placeholder="12345678"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Phone number*</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><input type="text" placeholder="0967521271"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Address</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="1">
+                        <td><textarea name="Address" id="address" cols="30"
+                                rows="10">Room 404.B11, School of CIT, EIU</textarea></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>City</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td><input type="text" placeholder="Enter your City"></td>
+                        <td><b>State</b></td>
+                        <td><input type="text" placeholder="Enter your State"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Zip/Postal Code</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td><input type="text" placeholder="Enter your Zip/Postal Code"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Country</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td>
+                            <select name="country" id="country">
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="China">China</option>
+                                <option value="USA">USA</option>
+                                <option value="Japan">Japan</option>
+                            </select>
+                        </td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Birthday</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td><input type="date" name="Birthday" id="Birthday"></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td>
+                            <select name="gender" id="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Starting date</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td><input type="radio" value="Spring" name="season">Spring</td>
+                        <td><input type="radio" value="Spring" name="season">Spring</td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Comment</th>
+                <td colspan="3">
+                    <table border="0" cellspacing="0">
+                        <td><textarea name="comment" id="comment" cols="30" rows="10">Please send us more information   </textarea></td>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

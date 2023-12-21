@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .register {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 2px solid rgb(4, 4, 150);
+        }
+
+        #year {
+            width: 40px;
+        }
+
+        #name {
+            margin-left: 15px
+        }
+
+        #day {
+            margin-left: 23px
+        }
+
+        #male {
+            margin-left: 30px
+        }
+
+        #address {
+            margin-left: 25px;
+        }
+
+        #phone {
+            margin-left: 11px
+        }
+
+        #mail {
+            margin-left: 39px
+        }
+
+        #username{
+            margin-left: 57px;
+        }
+
+        #password{
+            margin-left: 61px;
+        }
+        #repassword{
+            margin-left: 3px;
+        }
+        .regButton{
+            margin-left: 36%;
+        }
+    </style>
+    <title>Problem 1</title>
+</head>
+
+<body>
+    <div class="register">
+        <h3>
+            <center>MEMBER REGISTRATION</center>
+        </h3>
+        <form action="#" name="register" method="post">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <label for="name">Full name:</label>
+                <input type="text" id="name">
+                <br>
+                <span>
+                    <label for="day">Birthday: </label>
+                    <select name="day" id="day">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="month">Month</label>
+                    <select name="month" id="month">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="year">Year</label>
+                    <input type="text" id="year">
+                </span>
+                <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+                <br>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                <br>
+                <label for="phone">Telephone:</label>
+                <input type="text" name="phone" id="phone">
+                <br>
+                <label for="mail">Email:</label>
+                <input type="text" name="mail" id="mail">
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Credentials</b></legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <br>
+                <label for="repassword">Confirm Password:</label>
+                <input type="password" name="repassword" id="repassword" required>
+            </fieldset>
+        </form>
+        <div class="regButton">
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+        </div>
+    </div>
+</body>
+
+</html>

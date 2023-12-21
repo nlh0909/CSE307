@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .register {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 2px solid rgb(4, 4, 150);
+        }
+
+        #year {
+            width: 40px;
+        }
+
+        #name {
+            margin-left: 10px
+        }
+
+        #day {
+            margin-left: 7px
+        }
+
+        #male {
+            margin-left: 12px
+        }
+
+        #address {
+            margin-left: 25px;
+        }
+
+        #phone {
+            margin-left: 5px
+        }
+
+        #mail {
+            margin-left: 33px
+        }
+
+        #username{
+            margin-left: 26px;
+        }
+
+        #password{
+            margin-left: 60px;
+        }
+        #repassword{
+            margin-left: 3px;
+        }
+        .regButton{
+            margin-left: 36%;
+        }
+    </style>
+    <title>ABC Bookstore</title>
+</head>
+
+<body>
+    <div class="register">
+        <h3>
+            <center>ĐĂNG KÝ THÀNH VIÊN</center>
+        </h3>
+        <form action="#" name="register" method="post">
+            <fieldset>
+                <legend><b>Thông tin cá nhân</b></legend>
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name">
+                <br>
+                <span>
+                    <label for="day">Ngày sinh:</label>
+                    <select name="day" id="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="month">Tháng:</label>
+                    <select name="month" id="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="year">Năm</label>
+                    <input type="text" id="year">
+                </span>
+                <br>
+                <label for="gender">Giới tính:</label>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Nữ</label>
+                <br>
+                <label for="address">Địa chỉ:</label>
+                <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                <br>
+                <label for="phone">Điện thoại:</label>
+                <input type="text" name="phone" id="phone">
+                <br>
+                <label for="mail">Email:</label>
+                <input type="text" name="mail" id="mail">
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Thông tin đăng nhập</b></legend>
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" name="password" id="password" required>
+                <br>
+                <label for="repassword">Nhập lại mật khẩu:</label>
+                <input type="password" name="repassword" id="repassword" required>
+            </fieldset>
+        </form>
+        <div class="regButton">
+            <input type="submit" value="Đăng ký">
+            <input type="button" value="Hủy">
+        </div>
+    </div>
+</body>
+
+</html>
